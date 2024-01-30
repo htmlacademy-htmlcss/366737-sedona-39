@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария Бадулина](https://up.htmlacademy.ru/htmlcss/39/user/366737).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
