@@ -2,7 +2,7 @@
 
 * Студент: [Мария Бадулина](https://up.htmlacademy.ru/htmlcss/39/user/366737).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-
+* Сайт: [Проектная работа: "Седона"](https://melante.github.io/366737-sedona-39/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
