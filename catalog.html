@@ -9,7 +9,7 @@
   <body>
     <!--Шапка сайта-->
     <header data-test="header" class="catalog-header">
-      <a href="index.html" class="page-logo">
+      <a href="index.html" class="page-logo" aria-current="page">
         <img src="images/logo/logo-sedona.svg" width="138" height="64" alt="логотип компании">
       </a>
       <nav class="navigation">
@@ -24,7 +24,7 @@
             <a class="navigation=link navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation=link" href="#">
               <span class="visually-hidden">
@@ -46,14 +46,14 @@
 
     <main data-test="main" class="main-inner">
       <h1 class="inner-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
+      <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html"><img src="#" alt="Главная"></a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
-      </ul>
+      </ol>
       <!--Фильтрация-->
       <section data-test="filter" class="catalog-products">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
@@ -120,7 +120,7 @@
           <option value="stars">Количество звезд</option>
         </select>
         <div class="mode">
-          <a href="#" class="catalog-mode catalog-mode-active">
+          <a href="#" class="catalog-mode catalog-mode-selected">
             <span class="visually-hidden">Показать карточки</span>
           </a>
           <a href="#" class="catalog-mode">
@@ -133,7 +133,8 @@
         <ul class="hotels-list">
           <li class="hotels-card">
             <a href="#" class="card-image" tabindex="-1">
-              <img class="hotels-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Звездное небо">
+              <img class="hotels-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212"
+                alt="Звездное небо">
             </a>
             <h3 class="hotels-card-title">Amara Resort & Spa</h3>
             <p class="hotels-card-filter">Гостиница</p>
@@ -147,7 +148,8 @@
           </li>
           <li class="hotels-card">
             <a href="#" class="card-image" tabindex="-1">
-              <img class="hotels-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Горы, пасмурное небо и радуга">
+              <img class="hotels-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212"
+                alt="Горы, пасмурное небо и радуга">
             </a>
             <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
             <p class="hotels-card-filter">Гостиница</p>
@@ -161,24 +163,23 @@
           </li>
           <li class="hotels-card">
             <a href="#" class="card-image" tabindex="-1">
-              <img class="hotels-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Горы в ясный день">
+              <img class="hotels-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212"
+                alt="Горы в ясный день">
             </a>
             <h3 class="hotels-card-title">Desert Quail Inn</h3>
-
-              <p class="hotels-card-filter">Гостиница</p>
-              <p class="hotels-card-price">от 2500 ₽</p>
+            <p class="hotels-card-filter">Гостиница</p>
+            <p class="hotels-card-price">от 2500 ₽</p>
             <a class="hotels-card-button button detail" href="#">Подробнее</a>
             <a class="hotels-card-button button-favorites" href="#">В избранное</a>
-
             <p class="stars three-stars">
               <span class="visually-hidden">3 звезды</span>
             </p>
             <b class="hotels-card-rating">Рейтинг: 6,9</b>
-
           </li>
           <li class="hotels-card">
             <a href="#" class="card-image" tabindex="-1">
-              <img class="hotels-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212" alt="горы в закате">
+              <img class="hotels-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212"
+                alt="горы в закате">
             </a>
             <h3 class="hotels-card-title">GreenTree Inn</h3>
             <p class="hotels-card-filter">Гостиница</p>
@@ -216,7 +217,8 @@
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form">
-          <input type="email" name="email" placeholder="Ваш e-mail">
+          <label class="visually-hidden" for="email-id"> Укажите ваш email</label>
+          <input type="email" name="email" id="email-id" placeholder="Ваш e-mail">
         </form>
         <button class="subscribe-btn">Подписаться</button>
       </section>
@@ -225,27 +227,26 @@
     <footer data-test="footer" class="catalog-footer">
       <ul class="social-list">
         <li class="social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
+          <a class="social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">В контакте</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="button" href="https://t.me/htmlacademy">
+          <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="footer-web" href="https://htmlacademy.ru/">
-        <img class="footer-logo" src="images/logo/logo-htmlacademy.svg" width="115" height="33" alt="Сайт html Академии">
+        <img class="footer-logo" src="images/logo/logo-htmlacademy.svg" width="115" height="33"
+          alt="Сайт html Академии">
       </a>
     </footer>
-
   </body>
-
 </html>
