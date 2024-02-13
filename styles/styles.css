@@ -1,0 +1,146 @@
+@font-face{
+  font-family: "PT Sans";
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero{
+  background-color: #cd853f;
+  background-image: url(../images/image/divider-hero.svg),url(../images/image/hero-back.jpg);
+  background-position: bottom, top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.hero-logo{
+  margin: auto;
+}
+
+/*h2*/
+.title-section{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*h3*/
+.description-section{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/*advantages*/
+.advantages-item h3{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+/*Комфорт*/
+.comfort-item h3{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+/*Подписаться*/
+.subscribe-index{
+  color: #ffffff;
+  background-color: #696969;
+  background-image: url(../images/image/subscribe-back.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/*Подвал*/
+.footer-phone{
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color:  #000000;
+}
+
+/*Модальное окно*/
+.title-modal{
+  text-align: left;
+}
+
+/*Каталог*/
+.catalog-products{
+  color: #ffffff;
+  background-color: #696969;
+  background-image: url(../images/image/catalog-back.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-title{
+font-size: 60px;
+line-height: 78px;
+font-weight: 700;
+}
+
+.breadcrumbs-link{
+  font-size: 16px;
+}
+
+/*Фильтрация*/
+.catalog-filter-title{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.control{
+  line-height: 23px;
+}
+
+/*Сортировка*/
+.catalog-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-title{
+  color:#000000
+}
+
+.hotels-card-title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.hotels-card-rating{
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
