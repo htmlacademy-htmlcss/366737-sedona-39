@@ -4,38 +4,39 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <!--Шапка сайта-->
     <header data-test="header" class="page-header">
       <a href="index.html" class="page-logo">
-        <img src="images/logo/logo-sedona.svg" width="140" height="70" alt="логотип компании">
+        <img src="images/logo/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation=link" href="index.html">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation=link" href="#">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation=link" aria-current="page" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" aria-current="page" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
           <li class="navigation-item">
-            <a class="navigation=link" href="#">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation=link" href="#">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">
-                Добавленно в избранное 12 раз.
+                12 людей добавили в избранное данный сайт.
               </span>
             </a>
           </li>
@@ -45,21 +46,21 @@
     </header>
 
     <main data-test="main" class="main-inner">
-      <h1 class="inner-title">Гостиницы Седоны</h1>
-      <ol class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">
-            <span class="visually-hidden">
-              Главная
-            </span>
-          </a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы</a>
-        </li>
-      </ol>
-      <!--Фильтрация-->
       <section data-test="filter" class="catalog-products">
+        <h1 class="inner-title">Гостиницы Седоны</h1>
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">
+                Главная
+              </span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ol>
+        <!--Фильтрация-->
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -138,7 +139,7 @@
           <li class="hotels-card">
             <a href="#" class="card-image" tabindex="-1">
               <img class="hotels-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212"
-                alt="Звездное небо">
+                alt="Звездное небо между скалами">
             </a>
             <a href="#" class="card-title" tabindex="-1">
               <h3 class="hotels-card-title">Amara Resort & Spa</h3>
@@ -155,7 +156,7 @@
           <li class="hotels-card">
             <a href="#" class="card-image" tabindex="-1">
               <img class="hotels-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212"
-                alt="Горы, пасмурное небо и радуга">
+                alt="Горы на которые падают солнечные лучи сквозь пасмурное небо и радуга, пронзающая небо">
             </a>
             <a href="#" class="card-title" tabindex="-1">
               <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
@@ -172,7 +173,7 @@
           <li class="hotels-card">
             <a href="#" class="card-image" tabindex="-1">
               <img class="hotels-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212"
-                alt="Горы в ясный день">
+                alt="Зеленая долина, горы в ясный день">
             </a>
             <a href="#" class="card-title" tabindex="-1">
               <h3 class="hotels-card-title">Desert Quail Inn</h3>
@@ -189,7 +190,7 @@
           <li class="hotels-card">
             <a href="#" class="card-image" tabindex="-1">
               <img class="hotels-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212"
-                alt="горы в закате">
+                alt="Горы в алом закате и небо усыпанное звездами">
             </a>
             <a href="#" class="card-title" tabindex="-1">
               <h3 class="hotels-card-title">GreenTree Inn</h3>
