@@ -20,6 +20,9 @@
   --body-color: #F2F2F2;
   --back-advantages: #82B3D3;
   --font-main: "PT Sans", sans-serif;
+  --button-accent: #756157;
+  --button-secondary: #82B3D3;
+  --button-selected: #7DB54F;
 }
 
 .button{
@@ -27,6 +30,8 @@
   font-size: 16px;
   line-height: 1.25em;
   font-weight: 700;
+  color: var(--dark-back);
+  background-color: var(--button-accent);
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -194,8 +199,18 @@ position: absolute;
   color: var(--dark-back);
 }
 
-/*Подвал*/
+.subscribe-form input[type=email]{
+  font-size: 18px;
+  line-height: 1.33em;
+  color: var(--more-color);
+  background-color: var(--body-color);
+}
 
+.subscribe-btn{
+  background-color: var(--button-secondary);
+}
+
+/*Подвал*/
 .social-link{
   position:relative;
 }
@@ -222,6 +237,23 @@ position: absolute;
   text-align: left;
 }
 
+.modal-hidden label{
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+
+.modal-hidden input{
+  font-size: 18px;
+  line-height: 1.33em;
+  font-weight: 700;
+  background-color: var(--body-color);
+}
+
+.modal-button{
+  background-color: var(--button-secondary);
+}
+
 /*Страница каталога*/
 .catalog-products{
   color: var(--dark-back);
@@ -235,6 +267,12 @@ position: absolute;
 font-size: 60px;
 line-height: 1.3em;
 font-weight: 700;
+}
+
+.catalog-control{
+  font-family: var(--font-main);
+  font-size: 18px;
+  line-height: 1.16em;
 }
 
 .breadcrumbs-link{
@@ -262,6 +300,17 @@ font-weight: 700;
   line-height: 1.27em;
 }
 
+.filter-button{
+  background-color: transparent;
+  border:0;
+  outline: none;
+  text-decoration: none;
+}
+
+.button-on-active{
+  background-color: var(--button-secondary);
+}
+
 
 /*Сортировка*/
 .catalog-title{
@@ -287,16 +336,38 @@ font-size: 18px;
 line-height: 1.16em;
 }
 
+.button-favorites{
+  background-color: var(--button-secondary);
+}
+
+.button-favorites-selected{
+  background-color: var(--button-selected);
+}
+
+.stars{
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/icons/star.svg);
+}
+
 .hotels-card-rating{
   font-size: 16px;
   line-height: 1.25em;
   text-transform: uppercase;
 }
 
-/*Каталог*/
+/*Пагинация*/
+.pagination-item{
+  font-size: 20px;
+  line-height: 1.8em;
+}
 
-.stars{
-  width: 18px;
-  height: 18px;
-  background-image: url(../images/icons/star.svg);
+.pagination-item a{
+  color: var(--dark-back);
+  background-color: var(--button-secondary);
+}
+
+.pagination-item-active a{
+  color: var(--more-color);
+  background-color: var(--body-color);
 }
