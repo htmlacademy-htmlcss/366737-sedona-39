@@ -11,19 +11,19 @@
     <div class="container">
       <!--Шапка сайта-->
       <header data-test="header" class="page-header">
-        <a href="index.html" class="page-logo">
+        <a href="index.html" class="page-logo" aria-current="page">
           <img src="images/logo/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седона">
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" aria-current="page" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -41,8 +41,10 @@
                 </span>
               </a>
             </li>
+            <li>
+              <a class="navigation-button button" href="#">Хочу сюда!</a>
+            </li>
           </ul>
-          <a class="button" href="#">Хочу сюда!</a>
         </nav>
       </header>
 
@@ -111,8 +113,8 @@
               </ul>
             </fieldset>
             <div class="block-btn">
-              <button class="button-on button-on-active" type="submit">Применить</button>
-              <button class="button-off" type="reset">Сбросить</button>
+              <button class="button-on button button-on-active" type="submit">Применить</button>
+              <button class="button-off button" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -160,8 +162,8 @@
               </a>
               <p class="hotels-card-filter">Гостиница</p>
               <p class="hotels-card-price">от 4000 ₽</p>
-              <a class="hotels-card-button button detail" href="#">Подробнее</a>
-              <a class="hotels-card-button button-favorites" href="#">В избранное</a>
+              <a class="hotels-card-button button-detail button" href="#">Подробнее</a>
+              <a class="hotels-card-button button-favorites button" href="#">В избранное</a>
               <p class="stars four-stars">
                 <span class="visually-hidden">4 звезды</span>
               </p>
@@ -177,8 +179,8 @@
               </a>
               <p class="hotels-card-filter">Гостиница</p>
               <p class="hotels-card-price">от 5000 ₽</p>
-              <a class="hotels-card-button button detail" href="#">Подробнее</a>
-              <a class="hotels-card-button button-favorites" href="#">В избранное</a>
+              <a class="hotels-card-button button-detail button" href="#">Подробнее</a>
+              <a class="hotels-card-button button-favorites button" href="#">В избранное</a>
               <p class="stars four-stars">
                 <span class="visually-hidden">4 звезды</span>
               </p>
@@ -194,8 +196,8 @@
               </a>
               <p class="hotels-card-filter">Гостиница</p>
               <p class="hotels-card-price">от 2500 ₽</p>
-              <a class="hotels-card-button button detail" href="#">Подробнее</a>
-              <a class="hotels-card-button button-favorites" href="#">В избранное</a>
+              <a class="hotels-card-button button-detail button" href="#">Подробнее</a>
+              <a class="hotels-card-button button-favorites button" href="#">В избранное</a>
               <p class="stars three-stars">
                 <span class="visually-hidden">3 звезды</span>
               </p>
@@ -211,8 +213,8 @@
               </a>
               <p class="hotels-card-filter">Гостиница</p>
               <p class="hotels-card-price">от 1500 ₽</p>
-              <a class="hotels-card-button button detail" href="#">Подробнее</a>
-              <a class="hotels-card-button button-favorites" href="#">В избранное</a>
+              <a class="hotels-card-button button-detail button" href="#">Подробнее</a>
+              <a class="hotels-card-button button-favorites button" href="#">В избранное</a>
               <p class="stars two-stars">
                 <span class="visually-hidden">2 звезды</span>
               </p>
@@ -247,7 +249,7 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email-id"> Укажите ваш email</label>
             <input type="email" name="email" id="email-id" placeholder="Ваш e-mail">
-            <button class="subscribe-btn" type="button">Подписаться</button>
+            <button class="subscribe-btn button" type="button">Подписаться</button>
           </form>
         </section>
       </main>

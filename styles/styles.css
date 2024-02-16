@@ -19,13 +19,23 @@
   --dark-back: #ffffff;
   --body-color: #F2F2F2;
   --back-advantages: #82B3D3;
+  --font-main: "PT Sans", sans-serif;
+}
+
+.button{
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.25em;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 body {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
+  font-family: var(--font-main);
+  font-size: 22px;
+  line-height: 1.18em;
   color: var(--basic-color);
   background-color:  var(--body-color);
 }
@@ -55,7 +65,7 @@ body {
 .navigation-link{
   display: block;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.09em;
   font-weight: 700;
   text-decoration: none;
   color: var(--more-color);
@@ -92,24 +102,23 @@ body {
 /*h2*/
 .title-section{
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2em;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--more-color);
 }
 
-/*h3*/
-.description-section{
-  font-size: 22px;
-  line-height: 26px;
-}
-
 /*advantages*/
 .advantages-list h3{
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16em;
   font-weight: 700;
   color: var(--more-color);
+}
+
+.advantages-item p{
+  font-size: 18px;
+  line-height: 1.16em;
 }
 
 .advantages-item-block{
@@ -133,9 +142,14 @@ body {
 /*Комфорт*/
 .comfort-item h3{
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16em;
   font-weight: 700;
   color: var(--more-color);
+}
+
+.comfort-item p{
+  font-size: 18px;
+  line-height: 1.16em;
 }
 
 .comfort-title{
@@ -198,7 +212,7 @@ position: absolute;
 
 .footer-phone{
   font-size: 40px;
-  line-height: 40px;
+  line-height: 1em;
   text-decoration: none;
   color:  var(--more-color);
 }
@@ -219,12 +233,13 @@ position: absolute;
 
 .inner-title{
 font-size: 60px;
-line-height: 78px;
+line-height: 1.3em;
 font-weight: 700;
 }
 
 .breadcrumbs-link{
   font-size: 16px;
+  line-height: 1.3em;
   display: block;
 }
 
@@ -238,19 +253,20 @@ font-weight: 700;
 /*Фильтрация*/
 .catalog-filter-title{
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2em;
   font-weight: 700;
 }
 
 .control{
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 1.27em;
 }
 
 
 /*Сортировка*/
 .catalog-title{
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2em;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--more-color);
@@ -262,13 +278,18 @@ font-weight: 700;
 
 .hotels-card-title{
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.16em;
     font-weight: 700;
+}
+
+.hotels-card p{
+font-size: 18px;
+line-height: 1.16em;
 }
 
 .hotels-card-rating{
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25em;
   text-transform: uppercase;
 }
 
