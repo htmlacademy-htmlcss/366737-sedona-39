@@ -119,6 +119,7 @@ body {
   line-height: 1.16em;
   font-weight: 700;
   color: var(--more-color);
+  text-transform: uppercase;
 }
 
 .advantages-item p{
@@ -150,6 +151,7 @@ body {
   line-height: 1.16em;
   font-weight: 700;
   color: var(--more-color);
+  text-transform: uppercase;
 }
 
 .comfort-item p{
@@ -185,6 +187,12 @@ position: absolute;
   background-repeat: no-repeat;
 }
 
+/*Поиск гостиницы*/
+
+.hotel-search{
+  font-size: 20px;
+  line-height: 1.8em;
+}
 
 /*Подписаться*/
 .subscribe-index{
@@ -207,6 +215,8 @@ position: absolute;
 }
 
 .subscribe-btn{
+  font-size: 20px;
+  line-height: 1.8em;
   background-color: var(--button-secondary);
 }
 
@@ -363,6 +373,7 @@ line-height: 1.16em;
 }
 
 .pagination-item a{
+  font-weight: 700;
   color: var(--dark-back);
   background-color: var(--button-secondary);
 }
