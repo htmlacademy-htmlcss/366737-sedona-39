@@ -47,6 +47,7 @@ body {
 
 .container{
   width: 1200px;
+  margin: 0 auto;
   min-height: 100vx;
   background-color: var(--dark-back);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
@@ -64,7 +65,31 @@ body {
 }
 
 .page-header{
+  display: flex;
+  padding: 0 70px;
   background-color: var(--dark-back);
+}
+
+/*Навигация*/
+
+.navigation{
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navigation-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-user{
+  margin-left: auto;
 }
 
 .navigation-link{
@@ -99,9 +124,11 @@ body {
 }
 
 .hero-logo{
+  display: block;
   padding-top:51px;
   padding-bottom: 82px;
   margin: auto;
+
 }
 
 /*h2*/
@@ -109,8 +136,13 @@ body {
   font-size: 30px;
   line-height: 1.2em;
   font-weight: 700;
-  text-transform: uppercase;
+  text-align: center;
   color: var(--more-color);
+  text-transform: uppercase;
+}
+
+.description-section{
+  text-align: center;
 }
 
 /*advantages*/
@@ -118,18 +150,45 @@ body {
   font-size: 24px;
   line-height: 1.16em;
   font-weight: 700;
+  text-align: center;
   color: var(--more-color);
   text-transform: uppercase;
+}
+
+.advantages{
+  text-align: center;
+}
+
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-item{
+  width: 400px;
+}
+
+.advantages-item-reverse{
+  flex-direction: row-reverse;
+}
+
+.advantages-item-img{
+  display: flex;
+  width: 100%;
+}
+
+.advantages-item-block{
+  width: 400px;
+  color: var(--dark-back);
+  background-color: var(--back-advantages);
 }
 
 .advantages-item p{
   font-size: 18px;
   line-height: 1.16em;
-}
-
-.advantages-item-block{
-  color: var(--dark-back);
-  background-color: var(--back-advantages);
 }
 
 .advantages-item-block h3{
@@ -144,8 +203,14 @@ body {
   background-color: rgba(131, 179, 211, 0.20);
 }
 
-
 /*Комфорт*/
+
+.comfort-list{
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+
 .comfort-item h3{
   font-size: 24px;
   line-height: 1.16em;
@@ -165,11 +230,12 @@ body {
 }
 
 .comfort-title::before{
-position: absolute;
+  position: absolute;
   content: "";
   width: 75px;
   height: 75px;
-  top:-30px;
+  top:-10px;
+
 }
 
 .comfort-title-house::before{
@@ -177,12 +243,12 @@ position: absolute;
   background-repeat: no-repeat;
 }
 
-.comfort-title-food{
+.comfort-title-food::before{
   background-image: url(../images/icons/food.svg);
   background-repeat: no-repeat;
 }
 
-.comfort-title-souvenir{
+.comfort-title-souvenir::before{
   background-image: url(../images/icons/souvenir.svg);
   background-repeat: no-repeat;
 }
@@ -192,9 +258,14 @@ position: absolute;
 .hotel-search{
   font-size: 20px;
   line-height: 1.8em;
+  text-align: center;
 }
 
 /*Подписаться*/
+.subscribe{
+  text-align: center;
+}
+
 .subscribe-index{
   color: var(--dark-back);
   background-color: #b1cdde;
@@ -221,6 +292,20 @@ position: absolute;
 }
 
 /*Подвал*/
+.page-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+
+.social-list{
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+  max-width: 150px;
+  list-style: none;
+}
+
 .social-link{
   position:relative;
 }
@@ -265,7 +350,10 @@ position: absolute;
 }
 
 /*Страница каталога*/
+
+
 .catalog-products{
+  padding: 0 70px;
   color: var(--dark-back);
   background-color: #426d90;
   background-image: url(../images/image/catalog-back.jpg);
@@ -279,10 +367,10 @@ line-height: 1.3em;
 font-weight: 700;
 }
 
-.catalog-control{
-  font-family: var(--font-main);
-  font-size: 18px;
-  line-height: 1.16em;
+.breadcrumbs{
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
 .breadcrumbs-link{
@@ -299,6 +387,30 @@ font-weight: 700;
 }
 
 /*Фильтрация*/
+.catalog{
+  padding: 0 70px;
+}
+
+.filter-found{
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-control{
+  font-family: var(--font-main);
+  font-size: 18px;
+  line-height: 1.16em;
+}
+
+.catalog-filter{
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-group{
+  border: none;
+}
+
 .catalog-filter-title{
   font-size: 20px;
   line-height: 1.2em;
