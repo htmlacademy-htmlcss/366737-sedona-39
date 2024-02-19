@@ -435,6 +435,13 @@ font-weight: 700;
 
 
 /*Сортировка*/
+.hotels-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
 .catalog-title{
   font-size: 30px;
   line-height: 1.2em;
@@ -445,6 +452,10 @@ font-weight: 700;
 
 .card-title{
   color:var(--more-color);
+}
+
+.hotels-card{
+  width: 340px;
 }
 
 .hotels-card-title{
@@ -479,6 +490,11 @@ line-height: 1.16em;
 }
 
 /*Пагинация*/
+.pagination{
+  display: flex;
+  list-style: none;
+}
+
 .pagination-item{
   font-size: 20px;
   line-height: 1.8em;
