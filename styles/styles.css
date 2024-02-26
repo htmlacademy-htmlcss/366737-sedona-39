@@ -48,6 +48,8 @@ body {
 }
 
 .container{
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   margin: 0 auto;
   min-height: 100vh;
@@ -72,6 +74,10 @@ body {
   background-color: var(--dark-back);
 }
 
+.page-main{
+  flex-grow: 1;
+}
+
 /*Навигация*/
 
 .page-logo img{
@@ -81,6 +87,7 @@ body {
 .navigation{
   display: flex;
   justify-content:space-between;
+  gap: 30px;
   width: 100%;
   margin: 0 auto;
   margin-left: 30px;
@@ -89,7 +96,7 @@ body {
 .navigation-list{
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
+
   margin: 0;
   padding: 0;
   list-style: none;
@@ -298,10 +305,9 @@ body {
 }
 
 .comfort-item-title{
-  position: relative;
+
   margin: 0;
   margin-bottom: 30px;
-  padding-top: 102px;
   font-size: 24px;
   line-height: 1.16em;
   font-weight: 700;
@@ -315,27 +321,42 @@ body {
   line-height: 1.16em;
 }
 
-.comfort-item-title::before{
-  position: absolute;
-  content: "";
-  width: 75px;
-  height: 75px;
-  top:-10px;
-}
+
 
 .comfort-title-house::before{
+  content: "";
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
   background-image: url(../images/icons/house.svg);
   background-repeat: no-repeat;
+  background-size: contain;
+  width: 75px;
+  height: 75px;
 }
 
 .comfort-title-food::before{
+  content: "";
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
   background-image: url(../images/icons/food.svg);
   background-repeat: no-repeat;
+  background-size: contain;
+  width: 75px;
+  height: 75px;
 }
 
 .comfort-title-souvenir::before{
+  content: "";
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
   background-image: url(../images/icons/souvenir.svg);
   background-repeat: no-repeat;
+  background-size: contain;
+  width: 75px;
+  height: 75px;
 }
 
 /*Поиск гостиницы*/
@@ -706,21 +727,20 @@ padding-top: 35px;
 /*Пагинация*/
 .pagination{
   display: flex;
+  gap:8px;
   list-style: none;
 }
 
 .pagination-item{
-  padding-right: 8px;
   font-size: 20px;
   line-height: 1.8em;
 }
 
 .pagination-item a{
   display: flex;
-justify-content: center;
+  justify-content: center;
   align-items: center;
   font-weight: 700;
-
   border-radius: 4px;
   color: var(--dark-back);
   background-color: var(--button-secondary);
