@@ -74,6 +74,8 @@ body {
   background-color: var(--dark-back);
 }
 
+
+
 .page-main{
   flex-grow: 1;
 }
@@ -81,13 +83,15 @@ body {
 /*Навигация*/
 
 .page-logo img{
+  position: relative;
   display: block;
+  margin-bottom: -6px;
 }
 
 .navigation{
   display: flex;
   justify-content:space-between;
-  gap: 30px;
+  column-gap: 30px;
   width: 100%;
   margin: 0 auto;
   margin-left: 30px;
@@ -96,7 +100,6 @@ body {
 .navigation-list{
   display: flex;
   flex-wrap: wrap;
-
   margin: 0;
   padding: 0;
   list-style: none;
@@ -149,7 +152,7 @@ body {
 /*Hero*/
 
 .hero{
-  margin-top: -5px;
+  z-index: 1;
   margin-bottom: 69px;
   background-color:#b1cdde;
   background-image: url(../images/image/divider-hero.svg),url(../images/image/hero-back.jpg);
@@ -242,18 +245,12 @@ body {
 .advantages-item-img{
   display: flex;
   width: 100%;
-}
-
-.advantages-item-block{
-  width: 400px;
   color: var(--dark-back);
   background-color: var(--back-advantages);
 }
 
-.advantages-img{
-  width: auto;
-  height: auto;
-  object-fit: cover;
+.advantages-item-block{
+  width: 400px;
 }
 
 .advantages-item p{
