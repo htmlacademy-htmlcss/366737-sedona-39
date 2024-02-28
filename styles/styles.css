@@ -24,6 +24,7 @@
   --button-accent: #756157;
   --button-secondary: #82B3D3;
   --button-selected: #7DB54F;
+  --underline: #756257;
 }
 
 body {
@@ -36,6 +37,7 @@ body {
 }
 
 .button{
+  display: inline-block;
   font-family: var(--font-main);
   font-size: 16px;
   line-height: 1.25em;
@@ -45,6 +47,7 @@ body {
   background-color: var(--button-accent);
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .container{
@@ -74,16 +77,18 @@ body {
   background-color: var(--dark-back);
 }
 
-
-
 .page-main{
   flex-grow: 1;
 }
 
 /*Навигация*/
 
-.page-logo img{
+.page-header{
   position: relative;
+  z-index:  1;
+}
+
+.page-logo img{
   display: block;
   margin-bottom: -6px;
 }
@@ -110,6 +115,13 @@ body {
   align-self: center;
 }
 
+.navigation-item-active{
+  text-decoration: underline;
+  text-decoration-color: var(--underline) ;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 24px;
+}
+
 .navigation-user{
   display: flex;
   justify-content: end;
@@ -126,6 +138,8 @@ body {
   text-decoration: none;
   color: var(--more-color);
 }
+
+
 
 .navigation-item-link{
   min-width: 20px;
@@ -152,7 +166,6 @@ body {
 /*Hero*/
 
 .hero{
-  z-index: 1;
   margin-bottom: 69px;
   background-color:#b1cdde;
   background-image: url(../images/image/divider-hero.svg),url(../images/image/hero-back.jpg);
@@ -516,6 +529,7 @@ body {
 }
 
 .catalog-products{
+  z-index: 1;
   padding: 0 70px;
   margin-bottom: 50px;
   color: var(--dark-back);
@@ -575,12 +589,18 @@ padding-top: 35px;
 
 .catalog-control{
   font-family: var(--font-main);
+  width: 292px;
+  padding: 14px 20px;
   font-size: 18px;
   line-height: 1.16em;
   border: none;
   box-shadow: 0 0 1px 1px #E6E6E6;
   border-radius: 4px;
   background-color:  var(--dark-back);
+  background-image: url(../images/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  appearance: none;
 }
 
 .catalog-filter{
@@ -618,6 +638,11 @@ padding-top: 35px;
 
 .catalog-mode{
   border: 2px solid var(--border);
+  border-radius: 4px;
+}
+
+.catalog-mode-active{
+  border: 2px solid var(--more-color);
   border-radius: 4px;
 }
 
@@ -706,10 +731,13 @@ padding-top: 35px;
 }
 
 .stars{
+  display: grid;
+  gap: 6px;
   align-self: center;
   width: 18px;
   height: 18px;
   background-image: url(../images/icons/star.svg);
+  background-repeat:  space;
 }
 
 .card-inside .hotels-card-rating{
@@ -719,6 +747,18 @@ padding-top: 35px;
   background-color: var(--body-color);
   border-radius: 4px;
   text-transform: uppercase;
+}
+
+.two-stars{
+  width: 43px;
+}
+
+.three-stars{
+  width: 66px;
+}
+
+.four-stars{
+  width: 89px;
 }
 
 /*Пагинация*/
