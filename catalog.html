@@ -51,7 +51,7 @@
       <main data-test="main" class="main-inner">
         <section data-test="filter" class="catalog-products">
           <h1 class="inner-title">Гостиницы Седоны</h1>
-          <ol class="breadcrumbs">
+          <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 <span class="visually-hidden">
@@ -62,7 +62,7 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
-          </ol>
+          </ul>
           <!--Фильтрация-->
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -118,7 +118,7 @@
             </div>
           </form>
         </section>
-        <!--Каталог-->
+        <!--Результат фильтрации-->
         <section data-test="catalog" class="catalog">
           <div class="filter-found">
             <h2 class="catalog-title">Найдено гостиниц:<span> 38</span></h2>
@@ -129,30 +129,18 @@
               <option value="stars">Количество звезд</option>
             </select>
             <div class="mode">
-              <a href="#" class="catalog-mode catalog-mode-active">
-                <svg width="16" height="14" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 14">
-                  <path d="M4 0H0v6h4V0Zm12 0h-4v6h4V0Zm-6 0H6v6h4V0ZM4 8H0v6h4V8Zm12 0h-4v6h4V8Zm-6 0H6v6h4V8Z" />
-                </svg>
+              <a href="#" class="catalog-mode catalog-mode-cards catalog-mode-active">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
-              <a href="#" class="catalog-mode">
-                <svg width="16" height="14" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 14">
-                  <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
-                </svg>
+              <a href="#" class="catalog-mode catalog-mode-big">
                 <span class="visually-hidden">Показать слайдом</span>
               </a>
-              <a href="#" class="catalog-mode">
-                <svg width="16" height="14" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 14">
-                  <path
-                    d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z" />
-                </svg>
+              <a href="#" class="catalog-mode catalog-mode-list">
                 <span class="visually-hidden">Показать список</span>
               </a>
             </div>
           </div>
+          <!--Каталог-->
           <ul class="hotels-list">
             <li class="hotels-card">
               <div class="card-inside">
@@ -244,7 +232,7 @@
             <li class="pagination-item">
               <a class="pagination-link">4</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item pagination-dots">
               <a class="pagination-link">...</a>
             </li>
             <li class="pagination-item">
@@ -267,26 +255,25 @@
       <!--Подвал-->
       <footer data-test="footer" class="page-footer">
         <ul class="social-list">
-          <li class="social-item social-vk">
-            <a class="social-link" href="#">
+          <li class="social-item">
+            <a class="social-link social-link-vk" href="#">
               <span class="visually-hidden">В контакте</span>
             </a>
           </li>
-          <li class="social-item social-telegram">
-            <a class="social-link" href="#">
+          <li class="social-item">
+            <a class="social-link social-link-telegram" href="#">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
-          <li class="social-item social-youtube">
-            <a class="social-link" href="#">
+          <li class="social-item">
+            <a class="social-link social-link-youtube" href="#">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
         </ul>
         <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="footer-web" href="https://htmlacademy.ru/">
-          <img class="footer-logo" src="images/logo/logo-htmlacademy.svg" width="115" height="33"
-            alt="Сайт html Академии.">
+          <span class="visually-hidden">Ссылка на сайт html-academy</span>
         </a>
       </footer>
     </div>
