@@ -825,14 +825,6 @@ body {
   width: 100%;
   padding: 12px 20px;
   font-family: var(--font-main);
-
-  appearance: textfield;
-}
-
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
 }
 
 .catalog-filter-label{
