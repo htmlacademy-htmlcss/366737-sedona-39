@@ -49,7 +49,7 @@
       </header>
 
       <main data-test="main" class="main-inner">
-        <section data-test="filter" class="catalog-products">
+        <div data-test="filter" class="catalog-products">
           <h1 class="inner-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -74,7 +74,6 @@
                     <input id="pool" class="visually-hidden control-input" type="checkbox" name="pool" checked>
                     <span class="control-mark control-mark-square"></span>
                     <span class="control-label">Бассейн</span>
-
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -94,7 +93,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group house-filter">
               <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -103,7 +102,6 @@
                       checked>
                     <span class="control-mark control-mark-circle"></span>
                     <span class="control-label">Гостиница</span>
-
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -130,12 +128,12 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="range-prise">
                 <label class="catalog-filter-label" for="min-price">
-                  <input class="range-input" type="text" inputmode="numeric" pattern="\d*" id="min-price" value="0" name="min-price" placeholder="от">
+                  <input class="range-input min-input" type="text" inputmode="numeric" pattern="\d*" id="min-price" value="0" name="min-price"  required>
                   <span class="range-text">от</span>
                 </label>
                 <label class="catalog-filter-label" for="max-price">
-                  <input class="range-input" type="text" inputmode="numeric" pattern="\d*" id="max-price" value="9000" name="max-price"
-                    placeholder="до">
+                  <input class="range-input max-input" type="text" inputmode="numeric" pattern="\d*" id="max-price" value="9000" name="max-price"
+                     required>
                   <span class="range-text">до</span>
                 </label>
               </div>
@@ -155,7 +153,7 @@
               <button class="filter-button button-off button" type="reset">Сбросить</button>
             </div>
           </form>
-        </section>
+        </div>
         <!--Результат фильтрации-->
         <section data-test="catalog" class="catalog">
           <div class="filter-found">
@@ -181,7 +179,6 @@
           <!--Каталог-->
           <ul class="hotels-list">
             <li class="hotels-card">
-              <div class="card-inside">
                 <a href="#" class="card-image" tabindex="-1">
                   <img class="hotels-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212"
                     alt="Звездное небо между скалами.">
@@ -197,10 +194,8 @@
                   <span class="visually-hidden">4 звезды</span>
                 </p>
                 <p class="hotels-card-rating">Рейтинг: 8,5</p>
-              </div>
             </li>
             <li class="hotels-card">
-              <div class="card-inside">
                 <a href="#" class="card-image" tabindex="-1">
                   <img class="hotels-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212"
                     alt="Горы на которые падают солнечные лучи сквозь пасмурное небо и радуга, пронзающая небо.">
@@ -216,10 +211,8 @@
                   <span class="visually-hidden">4 звезды</span>
                 </p>
                 <p class="hotels-card-rating">Рейтинг: 9,2</p>
-              </div>
             </li>
             <li class="hotels-card">
-              <div class="card-inside">
                 <a href="#" class="card-image" tabindex="-1">
                   <img class="hotels-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212"
                     alt="Зеленая долина, горы в ясный день.">
@@ -235,10 +228,8 @@
                   <span class="visually-hidden">3 звезды</span>
                 </p>
                 <p class="hotels-card-rating">Рейтинг: 6,9</p>
-              </div>
             </li>
             <li class="hotels-card">
-              <div class="card-inside">
                 <a href="#" class="card-image" tabindex="-1">
                   <img class="hotels-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212"
                     alt="Горы в алом закате и небо усыпанное звездами.">
@@ -254,7 +245,6 @@
                   <span class="visually-hidden">2 звезды</span>
                 </p>
                 <p class="hotels-card-rating">Рейтинг: 5,0</p>
-              </div>
             </li>
           </ul>
           <ul class="pagination">

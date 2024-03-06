@@ -63,40 +63,36 @@
             Гранд-Каньон!</p>
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-img">
-              <div class="advantages-item-block">
-                <div class="advantages-text">
+                <div class="advantages-text advantages-item-block">
                   <h3 class="advantages-text-title advantages-text-title-img">Настоящий городок</h3>
                   <p class="advantages-text-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
-              </div>
               <img class="advantages-img" src="images/image/real-town.jpg" width="800" height="385"
                 alt="Дом на фоне гор, а перед домом зеленые деревья.">
             </li>
-            <li class="advantages-item advantages-item-twelve">
+            <li class="advantages-item advantages-item-light">
               <div class="advantages-text advantages-text-light">
                 <h3 class="advantages-text-title">Небольшая площадь</h3>
                 <p class="advantages-text-description">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
-            <li class="advantages-item advantages-item-twenty">
+            <li class="advantages-item advantages-item-darker">
               <div class="advantages-text advantages-text-light">
                 <h3 class="advantages-text-title">Красивая<br> дорога</h3>
                 <p class="advantages-text-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
-            <li class="advantages-item advantages-item-twelve">
+            <li class="advantages-item advantages-item-light">
               <div class="advantages-text advantages-text-light">
                 <h3 class="advantages-text-title">Мало<br> туристов</h3>
                 <p class="advantages-text-description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
             <li class="advantages-item advantages-item-reverse advantages-item-img">
-              <div class="advantages-item-block">
-                <div class="advantages-text">
+                <div class="advantages-text advantages-item-block">
                   <h3 class="advantages-text-title advantages-text-title-img">Там есть<br> мост дьявола</h3>
                   <p class="advantages-text-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
-              </div>
               <img class="advantages-img" src="images/image/bridge.jpg" width="800" height="385"
                 alt="Горы,равнины и мост дьявола по которому можно пройти.">
             </li>
@@ -175,32 +171,54 @@
           <span class="visually-hidden">Ссылка на сайт html-academy</span>
         </a>
       </footer>
-      <!--
-      Модальное окно
-      <div class="modal">
-        <h2 class="title-section title-modal">Поиск гостиницы в Седоне</h2>
-        <form class="modal-hidden" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="comming-id">
-            Дата заезда:
-            <input id="comming-id" type="date" name="comming">
-          </label>
-          <label for="departure-id">
-            Дата выезда:
-            <input id="departure-id" type="date" name="departure">
-          </label>
-          <label for="adult-id">
-            Взрослые:
-            <input id="adult-id" type="number" name="adult-text" min="1">
-          </label>
-          <label for="children-id">
-            Дети:
-            <input id="children-id" type="number" name="children-text" min="0">
-          </label>
-          <button class="modal-button button" type="button">Найти</button>
-        </form>
-        <button class="visually-hidden">Закрыть</button>
+
+      <!--Модальное окно-->
+
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-autch">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="title-section title-modal">Поиск гостиницы в Седоне</h2>
+            <form class="modal-hidden" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group field-data">
+                <label for="comming-id">
+                  Дата Заезда:
+                  <input id="comming-id" type="date" name="comming" value="Укажите дату" min="06-03-2024" max="01-01-2025" required>
+                </label>
+              </p>
+              <p class="field-group field-data">
+                <label for="departure-id">
+                  Дата Выезда:
+                  <input id="departure-id" type="date" name="departure" value="Укажите дату" min="06-04-2024" max="01-01-2025" required>
+                </label>
+              </p>
+              <p class="field-group field-people">
+                <label for="adult-id">
+                  Взрослые:
+                  <input id="adult-id" type="text" inputmode="numeric" name="adult-text" min="1" pattern="\d*" required>
+                </label>
+                <label for="children-id">
+                  Дети:
+                  <span class="tooltip">
+                    <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-date">
+                      <span class="visually-hidden">Информационная кнопка по детям</span>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                  <input id="children-id" type="text" name="children-text" min="0" required>
+                </label>
+              </p>
+              <button class="modal-button button" type="button">Найти</button>
+            </form>
+          </section>
+        </div>
       </div>
-    -->
+
+
     </div>
   </body>
 
