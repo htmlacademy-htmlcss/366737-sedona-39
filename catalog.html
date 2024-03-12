@@ -67,7 +67,7 @@
           <!--Фильтрация-->
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group options-filter">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -123,9 +123,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group range-filter">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <div class="range-prise">
+              <div class="range-price">
                 <label class="catalog-filter-label" for="min-price">
                   <input class="range-input min-input" type="text" inputmode="numeric" pattern="\d*" id="min-price" value="0" name="min-price"  required>
                   <span class="range-text">от</span>

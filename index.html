@@ -182,33 +182,38 @@
               <div class="field-group field-data">
                 <label for="comming-id">
                   Дата Заезда:
-                  <input class="field-input field-input-date" id="comming-id" type="text" name="comming"
-                    placeholder="27 апреля 2020" min="06-03-2024" max="01-01-2025" required>
-                  <p class="field-text field-text-error">Мы не можем отправить вас в прошлое.</p>
                 </label>
+                <input class="field-input field-input-date" id="comming-id" type="text" name="comming"
+                  placeholder="27 апреля 2020"  required>
+                <p class="field-text field-text-error">Мы не можем отправить вас в прошлое.</p>
               </div>
               <div class="field-group field-data">
                 <label for="departure-id">
                   Дата Выезда:
-                  <input class="field-input field-input-date" id="departure-id" type="text" name="departure"
-                    placeholder="1 сентября 2023" min="06-04-2024" max="01-01-2025" required>
-                  <p class="field-text">На эти даты есть свободные номера. Пока есть.</p>
                 </label>
+                <input class="field-input field-input-date" id="departure-id" type="text" name="departure"
+                  placeholder="1 сентября 2023" required>
+                <p class="field-text">На эти даты есть свободные номера. Пока есть.</p>
               </div>
+
               <div class="field-group field-people">
-                <label class="people-group" for="adult-id">
-                  Взрослые:
+                <div class="people-group">
+                  <label for="adult-id">
+                    Взрослые:
+                  </label>
                   <div class="count-people">
                     <button class="button-count button-min" aria-label="Уменьшить в билете на одного взрослого">
                     </button>
-                    <input class="field-input-count" id="adult-id" type="text" inputmode="numeric" name="adult-text" min="1"
+                    <input class="field-input-count input-count" id="adult-id" type="text" inputmode="numeric" name="adult-text"
                       pattern="\d*" placeholder="2" required>
                     <button class="button-count button-max" aria-label="Увеличить в билете на одного взрослого">
                     </button>
                   </div>
-                </label>
-                <label class="people-group" for="children-id">
-                  Дети:
+                </div>
+                <div class="people-group">
+                  <label for="children-id">
+                    Дети:
+                  </label>
                   <span class="tooltip">
                     <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-date">
                       <span class="visually-hidden">Информационная кнопка по детям</span>
@@ -221,18 +226,20 @@
                   <div class="count-people">
                     <button class="button-count button-min" aria-label="Уменьшить в билете на одного ребенка">
                     </button>
-                    <input class="field-input-count" id="children-id" type="text" name="children-text" min="0" placeholder="2" required>
+                    <input class="field-input-count input-count" id="children-id" type="text" name="children-text" placeholder="2" required>
                     <button class="button-count button-max" aria-label="Увеличить в билете на одного ребенка">
                     </button>
                   </div>
-                </label>
+                </div>
               </div>
               <button class="modal-button button" type="button">Найти</button>
             </form>
           </section>
-          <button class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
+          <form method="dialog">
+            <button class="modal-close-button" type="submit">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </form>
         </div>
 
       </div>
