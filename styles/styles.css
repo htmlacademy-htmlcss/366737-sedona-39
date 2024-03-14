@@ -1181,6 +1181,11 @@ body {
   align-items: center;
 }
 
+.range-input:hover,
+.range-input:focus{
+  background-color:var(--border);
+}
+
 .range-input{
   font-size: 18px;
   line-height: 1.33;
@@ -1249,6 +1254,10 @@ body {
 
 .range-toggle:active{
   outline: 3px solid var(--button-secondary);
+}
+
+.range-toggle:hover{
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .toggle-min{
