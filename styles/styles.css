@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 2 versions,not dead
-*/
-
 @font-face{
   font-family: "PT Sans";
   font-weight: 400;
@@ -62,10 +55,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
-}
-
-input:disabled {
-  background: revert;
 }
 
 .container{
@@ -156,6 +145,13 @@ input:disabled {
   font-weight: 700;
   text-decoration: none;
   color: var(--more-color);
+}
+
+.navigation-link:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
+.navigation-link:active{
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation-item-link{
@@ -286,7 +282,6 @@ input:disabled {
 .advantages-img{
   width: 100%;
   height: auto;
-  object-fit: contain;
 }
 
 .advantages-item-reverse{
@@ -504,10 +499,8 @@ input:disabled {
   border-color:var(--social-hover-color);
 }
 
-.field:disabled,
-.field:disabled:hover {
-  border-color:var(--button-active);
-
+.field:disabled{
+ background: revert;
 }
 
 .subscribe-btn{
@@ -782,6 +775,10 @@ input:disabled {
   background-color: var(--border);
 }
 
+.field-input:disabled{
+  background: revert;
+}
+
 .field-group{
   display: flex;
   justify-content: space-between;
@@ -801,15 +798,6 @@ input:disabled {
   background-image: url(../images/icons/calendar.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
-}
-
-.field-input::-moz-placeholder,
-.field-input::-moz-placeholder{
-  color: rgba(0, 0, 0, 0.6);
-}
-.field-input::placeholder,
-.field-input::placeholder{
-  color: rgba(0, 0, 0, 0.6);
 }
 
 .field-people{
@@ -866,6 +854,7 @@ input:disabled {
 
 .button-min{
   border-radius: 4px 0 0 4px;
+  margin-right: 1px;
 }
 
 .button-min::before{
@@ -892,6 +881,7 @@ input:disabled {
 
 .button-max{
   border-radius: 0 4px 4px 0;
+  margin-left: 1px;
 }
 
 .button-max::before,
@@ -1034,6 +1024,17 @@ input:disabled {
   display: block;
 }
 
+.breadcrumbs-link:hover{
+  color: rgba(255, 255, 255, 0.6);
+}
+.breadcrumbs-link:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:focus{
+  color: var(--dark-back);
+}
+
 .breadcrumbs-item{
    display: flex;
    align-items: center;
@@ -1156,14 +1157,27 @@ input:disabled {
   background-position: center;
 }
 
-.facilities:hover,
-.type-house:hover{
-  color:rgba(255, 255, 255, 0.3);
+.facilities input[type="checkbox"]:not(:disabled):hover,
+.type-house input[type="radio"]:not(:disabled):hover{
+  background-color:rgba(255, 255, 255, 0.3);
 }
-
-.facilities:active,
-.type-house:active{
+.facilities input[type="checkbox"]:not(:disabled):hover + .control-label,
+.type-house input[type="radio"]:not(:disabled):hover + .control-label{
+  color: rgba(255, 255, 255, 0.3);
+}
+.facilities input[type="checkbox"]:not(:disabled):active,
+.type-house input[type="radio"]:not(:disabled):active{
+  background-color:rgba(255, 255, 255, 0.6);
+}
+.facilities input[type="checkbox"]:not(:disabled):active + .control-label,
+.type-house input[type="radio"]:not(:disabled):active + .control-label{
   color:rgba(255, 255, 255, 0.6);
+}
+.facilities input[type="checkbox"]:disabled,
+.facilities input[type="checkbox"]:disabled + .control-label,
+.type-house input[type="radio"]:disabled,
+.type-house input[type="radio"]:disabled + .control-label{
+  opacity: 0.1;
 }
 
 .control-label{
@@ -1188,6 +1202,10 @@ input:disabled {
 .range-input:hover,
 .range-input:focus{
   background-color:var(--border);
+}
+
+.range-input:disabled{
+  background: revert;
 }
 
 .range-input{
@@ -1413,6 +1431,12 @@ input:disabled {
   border: 2px solid var(--more-color);
 }
 
+.catalog-mode:focus{
+  width: 48px;
+  height: 48px;
+  border: none;
+}
+
 .catalog-mode-cards{
   --icon: url(../images/icons/mode-tile.svg);
 }
@@ -1614,11 +1638,13 @@ input:disabled {
   border-radius: 4px;
   color: var(--dark-back);
   background-color: var(--button-secondary);
+  text-decoration: none;
 }
 
 .pagination-item a:hover,
 .pagination-item a:focus{
   background-color: var(--button-secondary-hover);
+  outline: none;
 }
 
 .pagination-item a:active{
@@ -1627,6 +1653,10 @@ input:disabled {
 
 .pagination-item-active a{
   color: var(--more-color);
+  background-color: var(--body-color);
+}
+
+.pagination-item-active a:focus{
   background-color: var(--body-color);
 }
 
