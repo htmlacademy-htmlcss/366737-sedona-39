@@ -64,6 +64,10 @@ body {
   cursor: pointer;
 }
 
+input:disabled {
+  background: revert;
+}
+
 .container{
   display: flex;
   flex-direction: column;
