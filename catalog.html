@@ -72,24 +72,20 @@
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control" for="pool">
-                    <input id="pool" class="visually-hidden control-input" type="checkbox" name="pool" checked>
-                    <span class="control-mark control-mark-square"></span>
+                  <label class="facilities" for="pool">
+                    <input id="pool" class="facilities-input" type="checkbox" name="pool" checked>
                     <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control" for="parking">
-                    <input id="parking" class="visually-hidden control-input" type="checkbox" name="parking" checked>
-                    <span class="control-mark control-mark-square"></span>
+                  <label class="facilities" for="parking">
+                    <input id="parking" class="facilities-input" type="checkbox" name="parking" checked>
                     <span class="control-label">Парковка</span>
-
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control" for="wi-fi">
-                    <input id="wi-fi" class="visually-hidden control-input" type="checkbox" name="wi-fi">
-                    <span class="control-mark control-mark-square"></span>
+                  <label class="facilities" for="wi-fi">
+                    <input id="wi-fi" class="facilities-input" type="checkbox" name="wi-fi">
                     <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
@@ -99,26 +95,23 @@
               <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control" for="hotel-id">
-                    <input id="hotel-id" class="visually-hidden control-input" type="radio" name="housing" value="hotel"
+                  <label class="type-house" for="hotel-id">
+                    <input id="hotel-id" class="type-house-input" type="radio" name="housing" value="hotel"
                       checked>
-                    <span class="control-mark control-mark-circle"></span>
                     <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control" for="motel-id">
-                    <input id="motel-id" class="visually-hidden control-input" type="radio" name="housing"
+                  <label class="type-house" for="motel-id">
+                    <input id="motel-id" class="type-house-input" type="radio" name="housing"
                       value="motel">
-                    <span class="control-mark control-mark-circle"></span>
                     <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control" for="apartments-id">
-                    <input id="apartments-id" class="visually-hidden control-input" type="radio" name="housing"
+                  <label class="type-house" for="apartments-id">
+                    <input id="apartments-id" class="type-house-input" type="radio" name="housing"
                       value="apartments">
-                    <span class="control-mark control-mark-circle"></span>
                     <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
@@ -157,7 +150,7 @@
         <!--Результат фильтрации-->
         <section data-test="catalog" class="catalog">
           <div class="filter-found">
-            <h2 class="catalog-title">Найдено гостиниц:<span>38</span></h2>
+            <h2 class="catalog-title">Найдено гостиниц: <span>38</span></h2>
             <select class="catalog-control" aria-label="Сортировка">
               <option value="cheap">Cначала дешевые</option>
               <option value="expensive">Cначала дорогие</option>
@@ -188,7 +181,7 @@
                 </a>
                 <p class="hotels-card-filter">Гостиница</p>
                 <p class="hotels-card-price">Oт 4000 ₽</p>
-                <a class="hotels-card-button button-detail button" href="#">Подробнее</a>
+                <a class="hotels-card-button button-detail button" href="#" >Подробнее</a>
                 <a class="hotels-card-button button-favorites button" href="#">В избранное</a>
                 <p class="stars four-stars">
                   <span class="visually-hidden">4 звезды</span>

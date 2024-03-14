@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-1400, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <div class="container">
       <!--Шапка сайта-->
@@ -43,7 +45,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <button class="navigation-button button" href="#" >Хочу сюда!</button>
+              <a class="navigation-button button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -184,7 +186,7 @@
                   Дата Заезда:
                 </label>
                 <input class="field-input field-input-date" id="comming-id" type="text" name="comming"
-                  placeholder="27 апреля 2020"  required>
+                  placeholder="27 апреля 2020" required>
                 <p class="field-text field-text-error">Мы не можем отправить вас в прошлое.</p>
               </div>
               <div class="field-group field-data">
@@ -204,8 +206,8 @@
                   <div class="count-people">
                     <button class="button-count button-min" aria-label="Уменьшить в билете на одного взрослого">
                     </button>
-                    <input class="field-input-count input-count" id="adult-id" type="text" inputmode="numeric" name="adult-text"
-                      pattern="\d*" placeholder="2" required>
+                    <input class="field-input input-count" id="adult-id" type="text" inputmode="numeric"
+                      name="adult-text" pattern="\d*" placeholder="2" required>
                     <button class="button-count button-max" aria-label="Увеличить в билете на одного взрослого">
                     </button>
                   </div>
@@ -226,7 +228,8 @@
                   <div class="count-people">
                     <button class="button-count button-min" aria-label="Уменьшить в билете на одного ребенка">
                     </button>
-                    <input class="field-input-count input-count" id="children-id" type="text" name="children-text" placeholder="2" required>
+                    <input class="field-input input-count" id="children-id" type="text" name="children-text"
+                      placeholder="2" required>
                     <button class="button-count button-max" aria-label="Увеличить в билете на одного ребенка">
                     </button>
                   </div>
