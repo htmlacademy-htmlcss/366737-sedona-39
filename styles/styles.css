@@ -211,7 +211,7 @@ body {
   padding-top:51px;
   padding-bottom: 82px;
   background-color:#b1cdde;
-  background-image: url("../images/image/divider-hero.svg),url(../images/image/hero-back.jpg");
+  background-image: url(../images/image/divider-hero.svg),url(../images/image/hero-back.jpg);
   background-position: bottom, top;
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
