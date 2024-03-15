@@ -17,19 +17,19 @@
   --basic-color: #333333;
   --more-color:  #000000;
   --dark-back: #ffffff;
-  --body-color: #F2F2F2;
+  --body-color: #f2f2f2;
   --font-main: "PT Sans", sans-serif;
-  --border: #E5E5E5;
+  --border: #e5e5e5;
   --button-accent: #756157;
   --button-accent-hover: #615048;
-  --button-secondary: #82B3D3;
-  --button-secondary-hover: #68A2CA;
+  --button-secondary: #82b3d3;
+  --button-secondary-hover: #68a2ca;
   --button-active: rgba(0, 0, 0, 0.3);
-  --button-selected: #7DB54F;
-  --button-selected-hover:#6C9E42;
+  --button-selected: #7db54f;
+  --button-selected-hover:#6c9e42;
   --underline: #756257;
-  --social-hover-color:#68A2CA;
-  --check-color:  #3F5E72;
+  --social-hover-color:#68a2ca;
+  --check-color:  #3f5e72;
   --width-title: 840px;
 
 }
@@ -211,7 +211,7 @@ body {
   padding-top:51px;
   padding-bottom: 82px;
   background-color:#b1cdde;
-  background-image: url(../images/image/divider-hero.svg),url(../images/image/hero-back.jpg);
+  background-image: url("../images/image/divider-hero.svg"),url("../images/image/hero-back.jpg");
   background-position: bottom, top;
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
@@ -754,6 +754,7 @@ body {
 }
 
 .input-count{
+  font-family: var(--font-main);
   padding: 0;
   text-align: center;
   font-size: 18px;
@@ -762,6 +763,10 @@ body {
   border: none;
   width: 31px;
   background-color: var(--body-color);
+}
+
+.input-count:focus{
+  z-index: 2;
 }
 
 .field-input{
@@ -825,7 +830,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  min-width: 110px;
+  min-width: 115px;
   max-width: 150px;
 }
 
@@ -852,7 +857,6 @@ body {
 
 .button-min{
   border-radius: 4px 0 0 4px;
-  margin-right: 1px;
 }
 
 .button-min::before{
@@ -878,7 +882,6 @@ body {
 
 .button-max{
   border-radius: 0 4px 4px 0;
-  margin-left: 1px;
 }
 
 .button-max::before,
