@@ -363,7 +363,7 @@ body {
 }
 
 .comfort-list li:nth-child(2n+1){
-  background-color:  #83B3D31F;
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .comfort-item-text{
@@ -584,15 +584,15 @@ body {
 }
 
 .social-link-vk{
-  --icon: url(../images/social/vk.svg);
+  --icon: url("../images/social/vk.svg");
 }
 
 .social-link-telegram{
-  --icon: url(../images/social/telegram.svg);
+  --icon: url("../images/social/telegram.svg");
 }
 
 .social-link-youtube{
-  --icon: url(../images/social/youtube.svg);
+  --icon: url("../images/social/youtube.svg");
 }
 
 .footer-phone{
@@ -822,7 +822,7 @@ body {
 }
 
 .field-text-error{
-  color: #FF5757;
+  color: #ff5757;
 }
 
 .count-people{
@@ -1516,12 +1516,10 @@ body {
 }
 
 .hotels-card-button{
-  justify-content: stretch;
+  width: 140px;
+  box-sizing: border-box;
+  padding: 8px 10px;
   border-radius: 4px;
-}
-
-.button-detail{
-  padding: 8px 26px;
 }
 
 .button-detail:hover,
@@ -1535,10 +1533,6 @@ body {
 
 .button-detail:disabled{
   background-color: var(--border);
-}
-
-.button-favorites{
-  padding: 8px 20px;
 }
 
 .button-favorites{
@@ -1556,10 +1550,6 @@ body {
 
 .button-favorites:disabled{
   background-color: var(--border);
-}
-
-.button-favorites-selected{
-  padding: 8px 18px;
 }
 
 .button-favorites-selected{
@@ -1611,10 +1601,13 @@ body {
 }
 
 .hotels-card .hotels-card-rating{
+  width: 140px;
+  box-sizing: border-box;
+  text-align: center;
   justify-self: end;
   font-size: 16px;
   line-height: 1.25em;
-  padding: 9px 22px;
+  padding: 9px 10px;
   background-color: var(--body-color);
   border-radius: 4px;
   text-transform: uppercase;
