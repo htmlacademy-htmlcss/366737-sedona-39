@@ -363,7 +363,7 @@ body {
 }
 
 .comfort-list li:nth-child(2n+1){
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .comfort-item-text{
@@ -693,7 +693,7 @@ body {
   cursor: pointer;
 }
 
-.modal-close-button:before{
+.modal-close-button::before{
   content: "";
   display: block;
   width: 52px;
@@ -1332,7 +1332,7 @@ body {
 }
 
 .button-off:hover{
-  color: rgba(255, 255, 255, 0.9);;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .button-off:active{
@@ -1473,7 +1473,7 @@ body {
   grid-template-rows: min-content 1fr;
   gap: 16px 20px;
   padding: 20px;
-  box-shadow: 0 0 1px 1px #E6E6E6;
+  box-shadow: 0 0 1px 1px #e6e6e6;
   border-radius: 4px;
 }
 
@@ -1516,10 +1516,12 @@ body {
 }
 
 .hotels-card-button{
-  width: 140px;
-  box-sizing: border-box;
-  padding: 8px 10px;
+  justify-content: stretch;
   border-radius: 4px;
+}
+
+.button-detail{
+  padding: 8px 26px;
 }
 
 .button-detail:hover,
@@ -1533,6 +1535,10 @@ body {
 
 .button-detail:disabled{
   background-color: var(--border);
+}
+
+.button-favorites{
+  padding: 8px 20px;
 }
 
 .button-favorites{
@@ -1550,6 +1556,10 @@ body {
 
 .button-favorites:disabled{
   background-color: var(--border);
+}
+
+.button-favorites-selected{
+  padding: 8px 18px;
 }
 
 .button-favorites-selected{
@@ -1601,13 +1611,10 @@ body {
 }
 
 .hotels-card .hotels-card-rating{
-  width: 140px;
-  box-sizing: border-box;
-  text-align: center;
   justify-self: end;
   font-size: 16px;
   line-height: 1.25em;
-  padding: 9px 10px;
+  padding: 9px 22px;
   background-color: var(--body-color);
   border-radius: 4px;
   text-transform: uppercase;
